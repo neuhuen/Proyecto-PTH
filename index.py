@@ -13,17 +13,17 @@ ship = Actor("player1", (535, 500))
 
 #--------------------------------------BACKGROUND--------------------------------------
 background = Actor("LVL1", size=(WIDTH,HEIGHT))
-background2 = Actor("LVL22", size=(WIDTH,HEIGHT))
-background3 = Actor("LVL33", size=(WIDTH,HEIGHT))
+background2 = Actor("LVL2", size=(WIDTH,HEIGHT))
+background3 = Actor("LVL3", size=(WIDTH,HEIGHT))
 boss = Actor("boss1", (535,0), size=(870, 100))
 bala_boss = Actor("laserRed1", (535,350), size=(200,600))
 carga_boss = Actor("laserRedShot1", (535,80), size=(400,70))
 carga_boss.angle=90
-fail = Actor("fail1", size=(WIDTH,HEIGHT))
+fail = Actor("fail", size=(WIDTH,HEIGHT))
 
-play = Actor("play1" , (535, 300), size=(200,100))
-title = Actor("titulo1",(535,50))
-carga = Actor("carga1",(535,300), size=(1070,600))
+play = Actor("play" , (535, 300), size=(200,100))
+title = Actor("titulo",(535,50))
+carga = Actor("carga",(535,300), size=(1070,600))
 
 mode = "LVL3"
 
@@ -54,7 +54,7 @@ def spawn_enemigos(level):
         for i in range(5):
             x = random.randint(20, 1050)
             y = random.randint(-500, -50)
-            enemy2 = Actor("enemy22", (x, y))
+            enemy2 = Actor("enemy2", (x, y))
             enemy2.vida = 3
             enemigos.append(enemy2)
 
